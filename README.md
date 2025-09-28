@@ -27,13 +27,13 @@ I created this repo to demonstrate a vulnerable Java web application and a proof
 1. Build the Docker image from the project folder:
 
 ```bash
-docker build -t log4j-shell-poc .
+docker build -t log4j-lab-demo .
 ```
 
 2. Run the container (this example uses host networking for simplicity; on some systems you may need different flags):
 
 ```bash
-docker run --network host log4j-shell-poc
+docker run --network host log4j-lab-demo
 ```
 
 3. Open your browser and visit `http://localhost:8080` (or the port shown by the container) to interact with the demo app.
